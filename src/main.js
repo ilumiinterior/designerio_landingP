@@ -199,6 +199,7 @@ function updateTransformation() {
   const roomIn = range(progress, 0.08, 0.24);
   const finaleIn = range(progress, 0.7, 0.9);
   const videoProgress = range(progress, 0.16, 0.72);
+  const videoPan = videoProgress * videoProgress * (3 - 2 * videoProgress);
 
   root.style.setProperty('--story-progress', progress.toFixed(3));
   root.style.setProperty('--hero-out', heroOut.toFixed(3));
@@ -206,6 +207,7 @@ function updateTransformation() {
   root.style.setProperty('--room-in', roomIn.toFixed(3));
   root.style.setProperty('--room-scale', (.94 + roomIn * .06).toFixed(3));
   root.style.setProperty('--video-progress', videoProgress.toFixed(3));
+  root.style.setProperty('--video-pan', `${(videoPan * 100).toFixed(2)}%`);
   root.style.setProperty('--before-label', (1 - range(videoProgress, .08, .28)).toFixed(3));
   root.style.setProperty('--after-label', range(videoProgress, .72, .92).toFixed(3));
   root.style.setProperty('--finale-in', finaleIn.toFixed(3));
