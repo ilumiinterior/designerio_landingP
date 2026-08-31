@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f4ef" />
+    <meta name="description" content="Designerio premení fotografiu vašej izby na premyslený návrh interiéru." />
+    <link rel="icon" type="image/png" href="/designerio-symbol.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title>Designerio — Váš priestor, Vaše rozhodnutia</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Designerio — domov">
+        <img src="/designerio-logo.png" alt="Designerio" />
+      </a>
+      <nav aria-label="Hlavná navigácia">
+        <a href="#ako">Ako to funguje</a>
+        <a href="#cena">Cena</a>
+      </nav>
+      <a class="button button--small" href="https://interior-azure-two.vercel.app/">Navrhnúť interiér <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="obsah">
+      <section class="transformation" id="top" aria-label="Premena interiéru">
+        <div class="transformation__sticky">
+          <div class="hero-copy" data-hero-copy>
+            <p class="eyebrow"></p>
+            <h1>Vaš interiér.<br /><em>Vaše rozhodnutia.</em></h1>
+            <p class="hero-copy__lead">Nahrajte fotografiu a premeňte neurčitú predstavu na priestor, v ktorom chcete zostať.</p>
+            <div class="scroll-cue" aria-hidden="true"><span></span>Posuňte sa nižšie</div>
+          </div>
+
+          <div class="room-stage" data-room-stage>
+            <video
+              class="transformation-video"
+              data-transformation-video
+              data-desktop-src="/transformacia.mp4"
+              data-mobile-src="/transformacia-mobile.mp4"
+              data-desktop-poster="/transformacia-poster.jpg"
+              data-mobile-poster="/transformacia-mobile-poster.jpg"
+              muted
+              playsinline
+              preload="auto"
+              aria-label="Premena prehnaného AI interiéru na čistý, harmonický návrh"
+            >
+              Váš prehliadač nepodporuje prehrávanie videa.
+            </video>
+            <div class="video-shade" aria-hidden="true"></div>
+            <div class="video-caption" aria-hidden="true">
+              <span class="video-caption__before">Predtým</span>
+              <span class="video-caption__after">Potom</span>
+            </div>
+          </div>
+
+          <div class="hero-finale" data-finale>
+            <img src="/designerio-logo.png" alt="Designerio" />
+            <p>Váš priestor, vaše rozhodnutie.</p>
+          </div>
+          <div class="progress" aria-hidden="true"><span data-progress></span></div>
+        </div>
+      </section>
+
+    
+
+      <section class="feature-demo wrap" aria-labelledby="sofa-demo-title">
+        <div class="feature-demo__copy reveal">
+          <h2 id="sofa-demo-title">Chcete zmeniť farbu sedačky? <em>Žiadny problém.</em></h2>
+          <div class="feature-demo__text">
+            <p>Designerio vám pomôže upraviť váš interiér.</p>
+            <p><em>Jednoducho, zrozumiteľne a bez zdĺhavého nastavovania.</em></p>
+          </div>
+        </div>
+        <div class="feature-demo__media reveal">
+          <video
+            data-feature-video
+            muted
+            playsinline
+            preload="metadata"
+            poster="/zmena-sedacky-poster.jpg"
+            aria-label="Ukážka zmeny farby sedačky v aplikácii Designerio"
+          >
+            <source src="/zmena-sedacky.mp4" type="video/mp4" />
+            Váš prehliadač nepodporuje prehrávanie videa.
+          </video>
+          <button class="video-control" type="button" data-video-control aria-label="Prehrať ukážku">
+            <span aria-hidden="true" data-video-control-icon>▶</span>
+            <span data-video-control-label>Prehrať</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="steps wrap" id="ako">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Ako to funguje</p>
+          <h2>Tri kroky.<br />Jedna lepšia izba.</h2>
+        </div>
+        <ol class="steps__list">
+          <li class="step reveal">
+            <span class="step__number">01</span>
+            <div class="step__visual upload-visual" aria-hidden="true">
+              <div class="photo-placeholder"><span>JPG</span><i></i></div>
+              <span class="cursor-dot"></span>
+            </div>
+            <div class="step__copy"><h3>Nahrajte fotografiu</h3><p>Stačí jeden záber miestnosti. Designerio si všimne dispozíciu, svetlo aj to, čo má zostať.</p></div>
+          </li>
+          <li class="step step--reverse reveal">
+            <span class="step__number">02</span>
+            <div class="step__visual preference-visual" aria-hidden="true">
+              <span>pokojný</span><span>prírodný</span><span>nadčasový</span><i></i>
+            </div>
+            <div class="step__copy"><h3>Povedzte, čo sa vám páči</h3><p>Vyberte miestnosť, náladu a smer. Bez odborných výrazov a nekonečných formulárov.</p></div>
+          </li>
+          <li class="step reveal">
+            <span class="step__number">03</span>
+            <div class="step__visual result-visual" aria-hidden="true"><i></i><b>Hotovo</b></div>
+            <div class="step__copy"><h3>Pozrite si nový priestor</h3><p>Za chvíľu dostanete vizuálny návrh, s ktorým môžete ďalej pracovať, zdieľať ho alebo sa k nemu vrátiť.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="quote-band">
+        <div class="wrap reveal">
+          <img src="/designerio-symbol.png" alt="" />
+          <blockquote>„Dobrá miestnosť nezačína nábytkom.<br />Začína pocitom, ktorý v nej chcete mať.“</blockquote>
+        </div>
+      </section>
+
+      <section class="pricing wrap" id="cena">
+        <div class="pricing__copy reveal">
+          <p class="eyebrow">Cena</p>
+          <h2>Žiadne prekvapenia.<br />Len dobrý návrh.</h2>
+          <p>Finálne balíky ešte pripravujeme. Keď ich zverejníme, vždy dopredu uvidíte, koľko návrh stojí — bez skrytých poplatkov.</p>
+        </div>
+        <div class="price-card reveal">
+          <p class="eyebrow">Skorý prístup</p>
+          <div class="price-card__status"><span></span>Cenník pripravujeme</div>
+          <ul>
+            <li>Návrh z vašej fotografie</li>
+            <li>Výber nálady a typu miestnosti</li>
+            <li>Výsledok pripravený na zdieľanie</li>
+          </ul>
+          <a class="button button--wide" href="https://interior-azure-two.vercel.app/">Otvoriť Designerio <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="final-cta__orb" aria-hidden="true"></div>
+        <div class="wrap reveal">
+          <p class="eyebrow">Vaša predstava môže dostať tvar</p>
+          <h2>Ako by mohla vyzerať<br /><em>vaša izba?</em></h2>
+          <a class="button button--light" href="https://interior-azure-two.vercel.app/">Začať navrhovať <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <img src="/designerio-logo.png" alt="Designerio" />
+      <p>Váš osobný dizajnér, len bez halucinácií</p>
+      <a href="#top">Späť hore ↑</a>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
