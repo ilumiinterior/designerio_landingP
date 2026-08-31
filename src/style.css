@@ -263,8 +263,8 @@
     .transformation { height: 360vh; }
     .hero-copy { justify-content: flex-end; padding: 7rem 1rem 7rem; }
     .hero-copy__lead { max-width: 28rem; }
-    .room-stage { inset: 0; }
-    .transformation-video { object-position: center; }
+    .room-stage { background: var(--green-dark); inset: 0; }
+    .transformation-video { object-fit: contain; object-position: center; }
     .window { left: 5%; width: 29%; }
     .sofa { left: 25%; width: 60%; }
     .lamp { right: 5%; transform: scale(.75); transform-origin: bottom; }
